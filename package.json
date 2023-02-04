@@ -1,0 +1,25 @@
+{
+  "name": "vscode-pepper",
+  "displayName": "Pepper",
+  "description": "Pepper support for VS Code",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.75.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pepper",
+      "aliases": ["Pepper", "pepper"],
+      "extensions": [".pep"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pepper",
+      "scopeName": "source.pepper",
+      "path": "./syntaxes/pepper.tmLanguage.json"
+    }]
+  }
+}
